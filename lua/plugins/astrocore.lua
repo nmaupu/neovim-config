@@ -62,6 +62,16 @@ return {
         ["<Leader>b"] = { desc = "Buffers" },
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+        -- custom mappings
+        ["<C-Up>"] = { ":wincmd k<cr>", desc = "Navigate to the pane up" },
+        ["<C-Down>"] = { ":wincmd j<cr>", desc = "Navigate to the pane down" },
+        ["<C-Left>"] = { ":wincmd h<cr>", desc = "Navigate to the pane left" },
+        ["<C-Right>"] = { ":wincmd l<cr>", desc = "Navigate to the pane right" },
+        ["<C-S-Up>"] = { ":horizontal res -5<cr>", desc = "Decrease pane size vertically" },
+        ["<C-S-Down>"] = { ":horizontal res +5<cr>", desc = "Increase pane size vertically" },
+        ["<C-S-Left>"] = { ":vertical res -5<cr>", desc = "Decrease pane size horizontally" },
+        ["<C-S-Right>"] = { ":vertical res +5<cr>", desc = "Increase pane size horizontally" },
       },
       t = {
         -- setting a mapping to false will disable it

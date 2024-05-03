@@ -16,7 +16,7 @@
 --}
 
 vim.on_key(nil, vim.api.nvim_get_namespaces()["auto_hlsearch"])
-vim.cmd[[highlight Search guibg=Purple]]
+vim.cmd [[highlight Search guibg=Purple]]
 
 return {
   -- Configure AstroNvim updates
