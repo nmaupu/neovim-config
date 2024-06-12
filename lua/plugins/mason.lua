@@ -38,7 +38,6 @@ return {
         "golangci-lint",
         "jsonlint",
         "markdownlint-cli2",
-        "prettier",
         "ruff",
         "semgrep",
         "shellcheck",

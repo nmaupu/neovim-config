@@ -18,6 +18,16 @@
 vim.on_key(nil, vim.api.nvim_get_namespaces()["auto_hlsearch"])
 vim.cmd [[highlight Search guibg=Purple]]
 
+-- control auto formatting on save
+local null_ls = require "null-ls"
+
+null_ls.setup {
+  sources = {
+    null_ls.builtins.diagnostics.puppet_lint,
+    null_ls.builtins.formatting.puppet_lint,
+  },
+}
+
 return {
   -- Configure AstroNvim updates
   updater = {

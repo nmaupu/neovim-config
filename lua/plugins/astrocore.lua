@@ -64,6 +64,14 @@ return {
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
+        ["<C-t>"] = { ":TestNearest<cr>", desc = "Test nearest function" },
+        ["<leader>dt"] = {
+          function() require("dap-go").debug_test() end,
+          desc = "Run test in debug mode",
+        },
+        ["<leader>lt"] = { ":GoTests<cr>", desc = "Generate code to unit test this function" },
+        ["<leader>lT"] = { ":GoTestsAll<cr>", desc = "Generate code to unit test all functions" },
+
         -- custom mappings
         ["<C-Up>"] = { ":wincmd k<cr>", desc = "Navigate to the pane up" },
         ["<C-Down>"] = { ":wincmd j<cr>", desc = "Navigate to the pane down" },
@@ -78,6 +86,8 @@ return {
         -- setting a mapping to false will disable it
         -- ["<esc>"] = false,
       },
+      i = {},
+      v = {},
     },
   },
 }
