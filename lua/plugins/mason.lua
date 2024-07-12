@@ -20,6 +20,7 @@ return {
         "helm_ls",
         "jqls",
         "jsonls",
+        "jsonnet_ls",
         "terraformls",
         "tflint",
         "vimls",

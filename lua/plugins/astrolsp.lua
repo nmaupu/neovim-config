@@ -44,6 +44,24 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      jsonnet_ls = {
+        settings = {
+          formatting = {
+            Indent = 2,
+            MaxBlankLines = 2,
+            StringStyle = "single",
+            CommentStyle = "slash",
+            PrettyFieldNames = true,
+            PadArrays = true,
+            PadObjects = true,
+            SortImports = true,
+            UseImplicitPlus = true,
+            StripEverything = false,
+            StripComments = false,
+            StripAllButComments = false,
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
